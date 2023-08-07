@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Conversor</title>
+  </head>
+  <body>
+    <header>
+      <h1>Conversor de monedas</h1>
+    </header>
+
+    <aside>
+      <form id="dataInput" class="inputFlex">
+        <span> Monto en Peso chileno (CLP)</span>
+        <br />
+
+        <input id="valorIngreso" type="number" name="valor" />
+        <br />
+
+        <span> Convertir a: </span>
+
+        <select id="coin2Change" name="moneda">
+          <option value="dolar">Dolar</option>
+          <option value="euro">Euro</option>
+          <option value="bitcoin">Bitcoin</option>
+          <option value="uf">U.F.</option>
+          <option value="utm">U.T.M.</option>
+        </select>
+
+        <input type="button" id="bttnConverter" value="Convertir" />
+        <p>
+          son: <span id="resultadoConversor"> </span>
+          <span id="monedaSeleccionada"> </span>
+        </p>
+      </form>
+    </aside>
+
+    <main>
+      <div>
+        <canvas id="renderCanva"> </canvas>
+      </div>
+    </main>
+
+    <footer>
+      <span>Para desafio Latam</span>
+    </footer>
+
+    <script
+      type="module"
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.1/chart.umd.js"
+    ></script>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
